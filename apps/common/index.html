@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sweetalert用法</title>
+	<link href="../../static/common/sweetalert/sweetalert.css">
+	<script src="../../static/common/sweetalert/sweetalert.min.js"></script>
+	<script src="../../static/common/sweetalert/xtalert.js"></script>
+</head>
+<body>
+	<button id="btn1">错误提示</button>
+	<script >
+		var btn=document.getElementById('btn1');
+		btn.onclick = function(){
+			zlalert.alertError('不能删除板块')
+		};
+	</script>
+	<button id="btn2">信息提示</button>
+	<script >
+		var btn=document.getElementById('btn2');
+		btn.onclick = function(){
+			zlalert.alertInfo('您没有权限，请联系管理员')
+		};
+	</script>
+	<button id="btn3">成功提示</button>
+	<script >
+		var btn=document.getElementById('btn3');
+		btn.onclick = function(){
+			zlalert.alertSuccessWithTitle('成功啦','文章发表成功')
+		};
+	</script>
+
+	</script>
+	<button id="btn4">成功提示</button>
+	<script >
+		var btn=document.getElementById('btn4');
+		btn.onclick = function(){
+			zlalert.alertConfirm({
+				"confirmText":"回到首页",
+				"cancelText":"再发表一篇",
+				"msg":"恭喜文章发表成功",
+				"confirmCallback":function(){
+					alert('点击了确认按钮')
+				},
+				"cancelCallback":function(){
+					alert('点击了取消按钮');
+
+				}
+			});
+		};
+	</script>
+
+
+</body>
+</html>
