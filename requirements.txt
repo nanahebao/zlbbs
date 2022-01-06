@@ -4,7 +4,7 @@ aniso8601==8.0.0
 billiard==3.6.3.0
 blinker==1.4
 cache==1.0.3
-celery==4.4.2
+celery==5.2.2
 certifi==2019.11.28
 chardet==3.0.4
 Click==7.0
